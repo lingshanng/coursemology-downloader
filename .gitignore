@@ -1,0 +1,7 @@
+node_modules/
+*.un
+*.un~
+*.swp
+
+config/CONFIG.txt
+run.bat

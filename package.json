@@ -1,0 +1,29 @@
+{
+  "name": "coursemology-downloader",
+  "version": "1.0.0",
+  "description": "This downloader compares your local directory to the Coursemology materials/workbin folder, and downloads all new files and folders from Coursemology into your local directory.",
+  "main": "main.js",
+  "dependencies": {
+    "7zip": "0.0.6",
+    "axios": "^0.19.2",
+    "jsdom": "^16.4.0",
+    "node-7z": "^2.1.1",
+    "prompt-sync": "^4.2.0",
+    "unzipper": "^0.10.5",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lingshanng/coursemology-downloader.git"
+  },
+  "author": "lingshanng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lingshanng/coursemology-downloader/issues"
+  },
+  "homepage": "https://github.com/lingshanng/coursemology-downloader#readme"
+}

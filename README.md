@@ -26,9 +26,7 @@ Options:
 - `--timeout` or `-t`: Timeout per request in ms, defaults to 5000
 
 Tip:
-Create a `run.bat` file with the following line: `cmd /k node main.js`
-
-Double click on the file to open terminal and run script quickly.
+Create a `run.bat` file with the following line: `cmd /k node main.js`. Double click on the file to open terminal and run script quickly.
 
 
 ## Acknowledgements

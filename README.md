@@ -12,7 +12,7 @@ In the `config` directory, edit the `CONFIG.txt` file.
 Replace the following fields accordingly:
 * `email` Coursemology email
 * `password` Coursemology password
-* `course_id` Course id found in url. https://coursemology.org/courses/<course_id>
+* `course_id` Course id found in url. `https://coursemology.org/courses/<course_id>`
 * `directory_path` Path of your local directory for the course file, *relative to your home directory*
 
 ## Running the script

@@ -12,6 +12,7 @@ In the `config` directory, edit the `CONFIG.txt` file.
 Replace the following fields accordingly:
 * `email` Coursemology email
 * `password` Coursemology password
+* `course_id` Course id found in url. `https://coursemology.org/courses/<course_id>`
 * `directory_path` Path of your local directory for the course file, *relative to your home directory*
 
 ## Running the script
@@ -24,10 +25,8 @@ Options:
 - `--silent` or `-s`: No printing (apart from errors)
 - `--timeout` or `-t`: Timeout per request in ms, defaults to 5000
 
-Tips:
-Create a `run.bat` file with the following line.
-`cmd /k node main.js`
-Double click on the file to open terminal and run script quickly.
+Tip:
+Create a `run.bat` file with the following line: `cmd /k node main.js`. Double click on the file to open terminal and run script quickly.
 
 
 ## Acknowledgements

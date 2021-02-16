@@ -35,8 +35,7 @@ async function queryCourseAPI(cookies) {
     } )
 
     if (!materials_path) throw 'Error: materials folder not found';
-    const course_name = doc.querySelector('.page-header h1').textContent;
-
+    const course_name = doc.querySelector('.page-header h1').textContent.trim();
     return [materials_path, course_id, course_name];
 }
 

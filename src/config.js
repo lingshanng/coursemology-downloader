@@ -1,5 +1,6 @@
 const fs = require('fs');
 const yargs = require('yargs');
+const url = require('url');
 
 const CONFIG_FILE  = 'config/CONFIG.txt';
 const TIMEOUT = 5000;
@@ -46,8 +47,12 @@ function readTimeout() {
     return argv.timeout ? argv.timeout : TIMEOUT;
 }
 
+function readBaseUrl() {
+    return new URL(read('course_url')).origin;
+}
+
 function readCourseId() {
-    return read('course_id');
+    return read('course_url').split('/').pop();
 }
 
 function readDirectoryPath() {
@@ -59,6 +64,7 @@ module.exports = {
     readPassword,
     readPrint,
     readTimeout,
+    readBaseUrl,
     readCourseId,
     readDirectoryPath
 };

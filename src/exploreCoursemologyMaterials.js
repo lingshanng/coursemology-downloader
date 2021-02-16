@@ -10,7 +10,7 @@ async function exploreCourse(cookies) {
     const [materials_path, course_id, course_name] = await queryCourseAPI(cookies);
     const course = new Course(course_id, course_name);
     //assuming no sub folders for now
-    console.log('Exploring ' + course_name);
+    console.log('Exploring ' + course_name + ' ...');
     const materials = await exploreFolders(cookies, materials_path);
     course.populateFolders(materials);
     return course

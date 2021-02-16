@@ -1,4 +1,4 @@
 email = e0123456@u.nus.edu
 password = abcdefg
-course_id = 2013
+course_id = https://coursemology.org/courses/2013
 directory_path = Downloads\CS2040S

@@ -1,10 +1,10 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-const { readTimeout, readCourseId } = require('./config');
+const { readTimeout, readBaseUrl, readCourseId } = require('./config');
 
 const TIMEOUT = readTimeout();
-const API_BASE = 'https://coursemology.org';
+const API_BASE = readBaseUrl();
 
 const axios = require('axios').create({ timeout: TIMEOUT });
 
@@ -143,9 +143,6 @@ async function downloadFolderAPI(cookies, folder_path) {
                     clearInterval(responsePolling);
                     resolve(res.request.path);
                 } 
-                // else {
-                //     console.log(res.status);
-                // }
             } catch (error) {
                 reject(error);
             }

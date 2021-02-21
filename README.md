@@ -28,6 +28,7 @@ Options:
 Tip:
 Create a batch file with the following line: `cmd /k node main.js` to open terminal and run script quickly.
 
+![](./demo.gif)
 
 ## Acknowledgements
 Adapted code from [halfwhole/luminus-downloader](https://github.com/halfwhole/luminus-downloader)

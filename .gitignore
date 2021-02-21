@@ -3,5 +3,4 @@ node_modules/
 *.un~
 *.swp
 
-config/CONFIG.txt
 run.bat
